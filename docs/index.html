@@ -18,10 +18,6 @@
         <section id="ai project">
 
             <h3>A.I. Project Part A - Shortest Winning Sequence</h3>
-            <p>
-                <img src="images/Infexion.png" alt="Infexion Board">
-
-            </p>
             <p><b>Objective:</b></p>
             <p>In this project, we were required to develop an algorithm (in Python) to
                 play
@@ -46,8 +42,9 @@
                 such that it takes the least amount of spread moves (we called this
                 the ideal board). Whereas, H2 calculates the minimum cost required
                 to get to this ideal board. </p>
-            <p>Please read the full report here, it is very interesting, I promise!
+            <p>Please read the full report, it is very interesting, I promise!
             </p>
+            <a href="../ai project part a report.pdf">AI Project Part A report</a>
             <h3>A.I. Project Part B - Playing against A.I.</h3>
             <p><b>Objective:</b></p>
             <p>For this second part of the project, we were required to develop an
@@ -61,60 +58,72 @@
                 deepining, and move ordering. While I can't possibly fit everything
                 in our 6 page report here, I would love to talk about our
                 4-component heuristic.</p>
-            <div>
-                <h4>Component 1: Total Power per Side</h4>
-                <p><strong>Inspiration:</strong> Similar to the "Material Count" in
-                    chess, in Infexion, a token’s power is assigned as its value,
-                    and the Total Power per side is compared.</p>
+            <ul>
+                <li>
+                    <strong>Component 1: Total Power per Side</strong>
+                    <p><strong>Inspiration:</strong> Similar to the "Material Count" in
+                        chess, in Infexion, a token’s power is assigned as its value,
+                        and the Total Power per side is compared.</p>
+                </li>
 
-                <h4>Component 2: Defender Score per Side</h4>
-                <p><strong>Inspiration:</strong> Based on "Strong Pawn Structure" in
-                    chess. In Infexion, a Strong Token Structure is a dense circular
-                    structure, maximizing the protection among ally tokens.</p>
+                <li>
+                    <strong>Component 2: Defender Score per Side</strong>
+                    <p><strong>Inspiration:</strong> Based on "Strong Pawn Structure" in
+                        chess. In Infexion, a Strong Token Structure is a dense circular
+                        structure, maximizing the protection among ally tokens.</p>
+                </li>
 
-                <h4>Component 3: Attacker Score per Side</h4>
-                <p>This component focuses on the concept of sufficient protection,
-                    ensuring that ally tokens are protected by an equal number of
-                    other ally tokens to effectively defend against enemy attacks.
-                </p>
+                <li>
+                    <strong>Component 3: Attacker Score per Side</strong>
+                    <p>This component focuses on the concept of sufficient protection,
+                        ensuring that ally tokens are protected by an equal number of
+                        other ally tokens to effectively defend against enemy attacks.
+                    </p>
+                </li>
 
-                <h4>Component 4: Power Sum of Tokens Insufficiently Protected
-                    (PSOTIP) per Side</h4>
-                <p><strong>Inspiration:</strong> Related to "King Safety" in chess.
-                    In Infexion, the focus is on high power pieces, as they have a
-                    larger impact on the board. This component checks the power of
-                    pieces that are insufficiently protected.</p>
+                <li>
+                    <strong>Component 4: Power Sum of Tokens Insufficiently Protected
+                        (PSOTIP) per Side</strong>
+                    <p><strong>Inspiration:</strong> Related to "King Safety" in chess.
+                        In Infexion, the focus is on high power pieces, as they have a
+                        larger impact on the board. This component checks the power of
+                        pieces that are insufficiently protected.</p>
+                </li>
+            </ul>
 
-                <h4>Combining All 4 Components: The Entire Heuristic</h4>
-                <p>The two main features of the heuristic, Situation Score and
-                    Effective Power, are constructed from the above components. The
-                    equation used is: Heuristic = Situation score + Effective Power
-                    = [ X * diff(Defenders Score) + Y * diff(Attackers Score)] +
-                    diff[Total Power - PSOTIP], where X and Y are coefficients.
-                    After extensive testing, X = 0.5 and Y = 0.5 were chosen to
-                    balance the heuristic.</p>
-                <p>These two main features of our heuristic complement each others’
-                    weaknesses.
-                <ul>
-                    <li>Situation Score: Measures a player’s ability to defend and
-                        attack, e.g. the tokens’ positions. However,
-                        it treats all tokens equally regardless of their power. But
-                        this
-                        is addressed by Effective Power.</li>
-                    <li>
-                        Effective Power: Measures the total power a player has,
-                        which
-                        is sufficiently protected. However, it
-                        does not take into account where these sufficiently
-                        protected
-                        tokens are placed. But this is addressed
-                        by Situation Score.
-                    </li>
 
-                </ul>
-                Please also read our 6-page Part B report here!! I think you'll find it
-                interesting!
-                </p>
+            <h4>Combining All 4 Components: The Entire Heuristic</h4>
+            <p>The two main features of the heuristic, Situation Score and
+                Effective Power, are constructed from the above components. The
+                equation used is: Heuristic = Situation score + Effective Power
+                = [ X * diff(Defenders Score) + Y * diff(Attackers Score)] +
+                diff[Total Power - PSOTIP], where X and Y are coefficients.
+                After extensive testing, X = 0.5 and Y = 0.5 were chosen to
+                balance the heuristic.</p>
+            <p>These two main features of our heuristic complement each others’
+                weaknesses.
+            <ul>
+                <li>Situation Score: Measures a player’s ability to defend and
+                    attack, e.g. the tokens’ positions. However,
+                    it treats all tokens equally regardless of their power. But
+                    this
+                    is addressed by Effective Power.</li>
+                <li>
+                    Effective Power: Measures the total power a player has,
+                    which
+                    is sufficiently protected. However, it
+                    does not take into account where these sufficiently
+                    protected
+                    tokens are placed. But this is addressed
+                    by Situation Score.
+                </li>
+
+            </ul>
+            Please also read our 6-page Part B report here!! I think you'll find it
+            interesting!
+            <a href="../ai project part b report.pdf">AI Project Part B report</a>
+
+            </p>
             </div>
 
             <p><b>Challenges</b></p>
@@ -165,7 +174,7 @@
                 weren't able to
                 secure a meeting during a week</p>
 
-            <p>Results for Part A and B:</p>
+            <p><b>Results</b></p>
             <p>We were very pleased with our results:
             <ul>
                 <li>Part A - Shortest Winning Sequence: 7/8 =~ 88%, while the cohort
@@ -185,7 +194,7 @@
         </section>
         <section id="it project">
             <h3>IT Project (Capstone) - Recipe Storage App</h3>
-            <p>Objective and Role:</p>
+            <p><b>Objective and Role:</b></p>
             <p>In the COMP30022 IT Project - which was a capstone project in my major -
                 I undertook the role of Lead Architect Designer in developing a personal
                 recipe database app. The point of the subject was to teachs us about
@@ -195,7 +204,8 @@
                 My primary reponsibilties inlcluded architectural decision-making,
                 diagrams, backend development, and ingtegration of the frontend and
                 backend components. </p>
-            <p>Technologies Used:</p>
+            <p><b>Technologies Used:</b><img src="images/IT Project Tech Stack.png"
+                    alt="Infexion Wining Sequence Example"></p>
             <p>
             <ul>
                 <li>Software For Development
@@ -238,7 +248,7 @@
                 </ul>
             </ul>
             </p>
-            <p>Final Product:</p>
+            <p><b>Final Product:</b></p>
             <p>The end result was a fully functional personal recipe app that met the
                 client's requirements. It features user authentication, scanning of
                 recipes, creation and edit of recipe data. As part of the backend team,
@@ -246,9 +256,15 @@
                 schemas using Mongoose and MongoDB, along with Firebase for user
                 authenetication. The frontend integration, which I led, ensured that the
                 user expereince was seamless.
-                Please view our 2 minute product demo here. </p>
-            <p>Product Demo:</p>
-            <p>Challenges:</p>
+                Please view our 2 minute product demo below. </p>
+            <p><b>Product Demo:</b></p>
+            <video width="320" height="640" controls>
+                <source src="images/IT Project Demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+
+            <p><b>Challenges:</b></p>
             <p>#1 - extreme role specialisation</p>
             <p>Everyone was very gopd with their roles, which usually shouldn't be a
                 problem. But due to how specialised each of the team was, it was hard
@@ -274,7 +290,7 @@
                 frontend and
                 backend.
             </p>
-            <p>Results:
+            <p><b>Results:</b>
             <ul>
                 Results Pending, but so far:
                 <li>Progress Assessments: 38.75/45 = ~86%</li>
