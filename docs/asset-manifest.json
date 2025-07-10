@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/kyle-t01/kyle-t01.github.io/static/css/main.e9231ba4.css",
-    "main.js": "/kyle-t01/kyle-t01.github.io/static/js/main.2017f797.js",
-    "static/media/logo.svg": "/kyle-t01/kyle-t01.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/kyle-t01/kyle-t01.github.io/index.html",
-    "main.e9231ba4.css.map": "/kyle-t01/kyle-t01.github.io/static/css/main.e9231ba4.css.map",
-    "main.2017f797.js.map": "/kyle-t01/kyle-t01.github.io/static/js/main.2017f797.js.map"
+    "main.css": "./static/css/main.e9231ba4.css",
+    "main.js": "./static/js/main.872458ad.js",
+    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "./index.html",
+    "main.e9231ba4.css.map": "./static/css/main.e9231ba4.css.map",
+    "main.872458ad.js.map": "./static/js/main.872458ad.js.map"
   },
   "entrypoints": [
     "static/css/main.e9231ba4.css",
-    "static/js/main.2017f797.js"
+    "static/js/main.872458ad.js"
   ]
 }
