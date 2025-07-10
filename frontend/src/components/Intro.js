@@ -19,6 +19,7 @@ const Intro = () => {
                             subtitle={p.subtitle}
                             description={p.description}
                             imgSrc={p.imgSrc}
+                            techstack={p.techstack}
                             link={p.link}
                         />
                     ))}
