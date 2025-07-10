@@ -36,19 +36,21 @@ const Intro = () => {
             <div className='intro-profile'>
                 {/* profile */}
                 <h1>Kyle Tan</h1>
-                <h2>Building skills in Software, Cloud, and DevOps Engineering</h2>
+                {/*<h2>Building skills in Software, Cloud, and DevOps Engineering</h2>*/}
                 <p className="intro-text">
                     Hey! I'm Kyle, a recent CompSci grad interested in Backend, Cloud, and DevOps. I'm currently building projects to sharpen my skills in Kubernetes and CI/CD workflows ^.^
                 </p>
                 <p>Melbourne, Australia</p>
 
             </div>
+
+            {renderProjects()}
             <div className="about-me">
                 <Skills />
                 <About />
             </div>
 
-            {renderProjects()}
+
 
 
 
