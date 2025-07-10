@@ -1,6 +1,6 @@
 import '../style/Project.css'
-
-const Project = ({ title, subtitle, description, imgSrc, link }) => {
+import TechIcon from './TechIcon';
+const Project = ({ title, subtitle, description, imgSrc, techstack, link }) => {
     return (
         <div className="project">
 
@@ -19,10 +19,14 @@ const Project = ({ title, subtitle, description, imgSrc, link }) => {
                 <img src={imgSrc} alt={title} className="project-image" />
             </div>
             <div className='project-tech'>
-                TODO: project core technologies used
+                {techstack?.map((tech, i) => (
+                    <TechIcon iconURL={tech} key={i} />
+
+                ))}
             </div>
             <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">View Project</a>
-        </div>);
+        </div>
+    );
 }
 
 export default Project;
