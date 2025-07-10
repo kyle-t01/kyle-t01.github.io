@@ -1,0 +1,24 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 30px;
+}
+
+
+
+.project-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+}
