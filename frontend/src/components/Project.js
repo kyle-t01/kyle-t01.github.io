@@ -2,7 +2,12 @@ import '../style/Project.css'
 import TechIcon from './TechIcon';
 const Project = ({ title, subtitle, description, imgSrc, techstack, link }) => {
     return (
-        <div className="project">
+        <div
+            className="project"
+            onClick={() => window.open(link, "_blank")}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 'Enter' && window.open(link, "_blank")}>
 
 
             <div className="project-details">
@@ -24,7 +29,6 @@ const Project = ({ title, subtitle, description, imgSrc, techstack, link }) => {
 
                 ))}
             </div>
-            <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">View Project</a>
         </div>
     );
 }
