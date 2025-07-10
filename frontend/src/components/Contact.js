@@ -1,3 +1,5 @@
+import '../style/Intro.css'
+
 const Contact = () => {
     return (
         <div className="contact">
