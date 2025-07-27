@@ -40,7 +40,7 @@ const Intro = () => {
                 <Contact />
                 {/*<h2>Building skills in Software, Cloud, and DevOps Engineering</h2>*/}
                 <p className="intro-text">
-                    Hey! I'm Kyle, a recent CompSci grad interested in Backend, Cloud, and DevOps. I'm currently building projects to sharpen my skills in Kubernetes and CI/CD workflows ^.^
+                    Hey! I'm Kyle, I am Computer Science graduate interested in Cloud, Backend, DevOps, and Technology Consulting! Take a look at the projects I'm working on to sharpen these skills! ^.^
                 </p>
 
 
