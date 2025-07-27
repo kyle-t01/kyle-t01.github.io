@@ -7,6 +7,8 @@ const About = () => {
             <p>Hosting trivia nights with friends (which motivated me to deploy Trivia Night!) </p>
             <p>Learning Japanese and trying out conlangs like Toki Pona through translating simple texts</p>
             <p>Designing games, usually focused on strategy or social deduction mechanics</p>
+            <p>Working towards the AWS Solutions Architect Associate</p>
+            <p>Dipping my toes into VR development and Apache Kafka to for my next project</p>
             <p>Collecting random facts ^.^</p>
         </div>
     );
